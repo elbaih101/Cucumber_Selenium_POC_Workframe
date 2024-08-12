@@ -11,7 +11,7 @@ The framework is designed to facilitate automated testing with a focus on data-d
 
 1. **Cucumber Integration**
     - **Feature Files**: Located in `src/main/resources/features`, these define the test scenarios in Gherkin syntax.
-    - **Step Definitions**: Located in `alia.nazeel.stepDefs`, these implement the steps defined in the feature files.
+    - **Step Definitions**: Located in `org.example.stepDefs`, these implement the steps defined in the feature files.
 
 2. **Test Execution**
     - **Test Runner**: `BaseTestNGCucumberRunner` sets up the Cucumber test execution with TestNG integration.
@@ -36,7 +36,7 @@ POJOs are used to model the data structures for the framework. Data is stored in
 
 #### Example POJOs
 
-1. **User** (`alia.nazeel.pojos.User`):
+1. **User** (`org.example.pojos.User`):
    ```java
    public class User {
        private String username;
@@ -47,7 +47,7 @@ POJOs are used to model the data structures for the framework. Data is stored in
    }
    ```
 
-2. **Tax** (`alia.nazeel.pojos.Tax`):
+2. **Tax** (`org.example.pojos.Tax`):
    ```java
    public class Tax {
        private String name;

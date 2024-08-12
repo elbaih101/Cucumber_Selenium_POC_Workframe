@@ -1,4 +1,4 @@
-# Custom Web Element Framework for Nazeel-Project
+# Custom Web Element Framework
 
 This document provides a detailed explanation of the custom web element framework implemented in the `Nazeel-Project`. The framework allows for the creation and management of custom web elements that extend the default Selenium WebElements, enabling enhanced interaction and customization within your automated tests.
 
@@ -21,7 +21,7 @@ The `CustomFieldDecorator` class extends Selenium's `DefaultFieldDecorator` and 
 ### Code Implementation
 
 ```java
-package alia.nazeel.templates;
+package org.example.templates;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -126,10 +126,10 @@ many Kendo Ui Elements are extended from this allowing for fine tuning and ease 
 ### Code Implementation
 
 ```java
-package alia.nazeel.templates;
+package org.example.templates;
 
-import alia.nazeel.tools.CustomWebDriverWait;
-import alia.nazeel.tools.DriverManager;
+import org.example.tools.CustomWebDriverWait;
+import org.example.tools.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -226,10 +226,10 @@ using the [CustomFieldDecorator](#Custom-Field-Decorator) and implementing it in
 ### Code Example
 
 ```java
-package alia.nazeel.templates;
+package org.example.templates;
 
-import alia.nazeel.tools.CustomAssert;
-import alia.nazeel.tools.CustomWebDriverWait;
+import org.example.tools.CustomAssert;
+import org.example.tools.CustomWebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;

@@ -64,7 +64,7 @@ The `ReportMailer` class is intended to be executed from the command line or as 
                 <goal>java</goal>
             </goals>
             <configuration>
-                <mainClass>alia.nazeel.tools.ReportMailer</mainClass>
+                <mainClass>org.example.tools.ReportMailer</mainClass>
             </configuration>
         </execution>
     </executions>

@@ -4,8 +4,8 @@ This document provides an overview of the Maven Project Object Model (POM) struc
 
 ## Project Overview
 
-- **Group ID**: `alia.nazeel`
-- **Artifact ID**: `Nazeel-Project`
+- **Group ID**: `org.example`
+- **Artifact ID**: `WorkFramePOC`
 - **Version**: `1.0-SNAPSHOT`
 - **Java Version**: 21
 
@@ -134,7 +134,7 @@ the project uses the cucumber reporting tool for its ease of use and detailed re
             </goals>
             <!--the configuration and files to use for report generating-->
             <configuration>
-                <projectName>Nazeel-Project</projectName>
+                <projectName>WorkFramePOC</projectName>
                 <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                 <skipEmptyJSONFiles>true</skipEmptyJSONFiles>
                 <jsonFiles>
@@ -179,7 +179,7 @@ A special profile named `cucumber-report-only` is defined to generate Cucumber r
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Nazeel-Project</projectName>
+                            <projectName>WorkFramePOC</projectName>
                             <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                             <skipEmptyJSONFiles>true</skipEmptyJSONFiles>
                             <jsonFiles>

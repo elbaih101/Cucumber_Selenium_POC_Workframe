@@ -2,12 +2,14 @@ package org.example.pages;
 
 import org.example.kendoelements.*;
 import org.example.templates.BasePage;
+import org.example.tools.API;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class P01_TestPage extends BasePage
 {
-    public P01_TestPage(WebDriver driver) {
+    public P01_TestPage(WebDriver driver)
+    {
         super(driver);
     }
 
@@ -32,4 +34,21 @@ public class P01_TestPage extends BasePage
 
     @FindBy(css = "div.chip-multiselect")
     ChipsMultiselect chipsMultiselect;
+
+
+    public void sendKeysToTheMultiText()
+    {
+        multiLangTextField.sendKeys("hello", "مرحبا");
+    }
+
+    public void selectCityFromDropList()
+    {
+        kendoDropDownList.selectByText("cairo");
+    }
+
+    public String listenOnAPIAndGetBody()
+    {
+        API api = new API();
+        return api.getResponseBody(driver, "/api/therequest", () -> chipsMultiselect.selectByText("theRequestFiringTrigger"));
+    }
 }

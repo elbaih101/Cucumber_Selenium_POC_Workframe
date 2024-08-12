@@ -67,10 +67,10 @@ Returns pre-configured `EdgeOptions` for printing and download settings specific
 ## Code Example
 
 ```java
-package alia.nazeel.tools;
+package org.example.tools;
 
-import alia.nazeel.enums.Driver_Mode;
-import alia.nazeel.enums.Drivers;
+import org.example.enums.Driver_Mode;
+import org.example.enums.Drivers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
@@ -212,11 +212,11 @@ In the `BasePage` and other relevant classes where `DriverManager` is used, you 
 **For example, in `BasePage` class:**
 
 ```java
-package alia.nazeel.templates;
+package org.example.templates;
 
-import alia.nazeel.tools.DriverManager; // Add this import
-import alia.nazeel.tools.CustomAssert;
-import alia.nazeel.tools.CustomWebDriverWait;
+import org.example.tools.DriverManager; // Add this import
+import org.example.tools.CustomAssert;
+import org.example.tools.CustomWebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;

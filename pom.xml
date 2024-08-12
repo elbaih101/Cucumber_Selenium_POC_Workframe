@@ -147,7 +147,7 @@
                                 <goal>generate</goal>
                             </goals>
                             <configuration>
-                                <projectName>Nazeel-Project</projectName>
+                                <projectName>WorkFramePOC</projectName>
                                 <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                                 <skipEmptyJSONFiles>true</skipEmptyJSONFiles>
                                 <jsonFiles>
@@ -205,7 +205,7 @@
                                     <goal>generate</goal>
                                 </goals>
                                 <configuration>
-                                    <projectName>Nazeel-Project</projectName>
+                                    <projectName>WorkFramePOC</projectName>
                                     <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
                                     <skipEmptyJSONFiles>true</skipEmptyJSONFiles>
                                     <jsonFiles>

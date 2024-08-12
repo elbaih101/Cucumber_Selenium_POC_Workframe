@@ -114,4 +114,4 @@ Ensure that the following dependencies are included in your project:
 
 This documentation provides a clear overview of the `API` class, detailing its methods and usage for handling network requests and responses during Selenium tests. Adjust the examples as needed for your specific use case.
 
-the `API` is used through the project on various occasions check [NazeelCalculatons](nazeel calculations.md)
+the `API` is used through the project on various occasions check 

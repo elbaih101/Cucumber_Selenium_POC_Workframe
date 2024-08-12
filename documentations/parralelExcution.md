@@ -4,7 +4,7 @@ Here is a Markdown documentation for the provided classes related to parallel te
 
 # Parallel Test Execution Documentation
 
-This documentation outlines the classes and their roles in managing user sessions and executing tests in parallel using Cucumber and TestNG in the Nazeel Project.
+This documentation outlines the classes and their roles in managing user sessions and executing tests in parallel using Cucumber and TestNG in the  Project.
 
 ### Reference 
 -  [parralel web Driver Maager](driverManager.md)
@@ -30,16 +30,16 @@ The `BaseTestNGCucumberRunner` class extends `AbstractTestNGCucumberTests` to en
 ### Code Example
 
 ```java
-package alia.nazeel.templates;
+package org.example.templates;
 
-import alia.nazeel.pojos.User;
-import alia.nazeel.pojos.UserDataReader;
+import org.example.pojos.User;
+import org.example.pojos.UserDataReader;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/main/resources/features",
-        glue = {"alia.nazeel.stepDefs"}
+        glue = {"org.example.stepDefs"}
 )
 public class BaseTestNGCucumberRunner extends AbstractTestNGCucumberTests {
 
@@ -80,9 +80,9 @@ The `UserDataReader` class is responsible for reading user data from a JSON file
 ### Code Example
 
 ```java
-package alia.nazeel.pojos;
+package org.example.pojos;
 
-import alia.nazeel.tools.JsonUtils;
+import org.example.tools.JsonUtils;
 
 /**
  * Responsible for managing user sessions in a parallel test environment.
@@ -123,7 +123,7 @@ The `User` class is a POJO used for storing user credentials. It is utilized in 
 ### Code Example
 
 ```java
-package alia.nazeel.pojos;
+package org.example.pojos;
 
 /**
  * POJO for user data used in session management.
